@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.source.controller.MainController">
+   <children>
+       <ImageView fx:id="avatar" layoutX="5" layoutY="5" />
+       <Label fx:id="account" alignment="CENTER" layoutX="5" layoutY="150" style="-fx-border-width: 1; -fx-border-color: black;" text="Hello World!">
+           <font>
+               <Font size="12" />
+           </font>
+       </Label>
+       <TableView fx:id="tb" layoutX="150.0" layoutY="5.0" prefHeight="200.0" prefWidth="755.0" style="-fx-border-color: #ffffff;">
+           <columns>
+               <TableColumn fx:id="tbId" prefWidth="50" style="-fx-alignment: center" text="编号" />
+               <TableColumn fx:id="tbName" prefWidth="200" style="-fx-alignment: center" text="活动名称" />
+               <TableColumn fx:id="tbAward" prefWidth="200" style="-fx-alignment: center" text="奖励名称" />
+               <TableColumn fx:id="tbStock" prefWidth="190" style="-fx-alignment: center" text="库存" />
+               <TableColumn fx:id="tbStatus" prefWidth="90" style="-fx-alignment: center" text="状态" />
+           </columns>
+       </TableView>
+       <Label layoutX="5.0" layoutY="175" prefHeight="25" prefWidth="50" style="-fx-border-width: 1; -fx-border-color: black; -fx-alignment: center" text="Cookie" />
+       <TextField fx:id="cookies" layoutX="65" layoutY="175" prefWidth="500" />
+       <Label layoutX="5.0" layoutY="200.0" prefHeight="25" prefWidth="50" style="-fx-border-width: 1; -fx-border-color: black; -fx-alignment: center" text="csrf" />
+       <TextField fx:id="csrf" layoutX="65" layoutY="200.0" />
+       <Label layoutX="590" layoutY="175" prefHeight="25" prefWidth="50" style="-fx-border-width: 1; -fx-border-color: black; -fx-alignment: center" text="次数" />
+       <TextField fx:id="num" layoutX="650.0" layoutY="175" text="1" />
+       <Button fx:id="start" layoutX="830.0" layoutY="175" mnemonicParsing="false" onMouseClicked="#onStart" text="开始" />
+       <TextArea fx:id="logs" layoutX="5.0" layoutY="230" prefHeight="260.0" prefWidth="900.0" />
+       <Label layoutX="830.0" layoutY="493" text="版本号：v1.0" />
+      <Label layoutX="245.0" layoutY="200.0" prefHeight="25" prefWidth="30" style="-fx-border-width: 1; -fx-border-color: black; -fx-alignment: center" text="延迟" />
+      <TextField fx:id="delay" layoutX="290.0" layoutY="200.0" prefHeight="25.0" prefWidth="50.0" text="10" />
+      <Label layoutX="400.0" layoutY="200.0" prefHeight="25" style="-fx-border-width: 1; -fx-border-color: black; -fx-alignment: center" text="开始时间59分-" />
+      <TextField fx:id="startDates" layoutX="490.0" layoutY="200.0" prefHeight="25.0" prefWidth="50.0" text="58" />
+      <Label layoutX="550" layoutY="200.0" prefHeight="25" style="-fx-border-width: 1; -fx-border-color: black; -fx-alignment: center" text="秒" />
+      <Button onMouseClicked="#Bili" layoutX="696.0" layoutY="201.0" mnemonicParsing="false" text="测试" />
+   </children>
+</AnchorPane>
